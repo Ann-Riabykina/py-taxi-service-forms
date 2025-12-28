@@ -19,22 +19,22 @@ from .views import (
 urlpatterns = [
     path("", index, name="index"),
     path(
-        "manufacturers/",
+  "manufacturers/",
         ManufacturerListView.as_view(),
         name="manufacturer-list",
     ),
     path(
-    "manufacturers/add/",
+  "manufacturers/add/",
         ManufacturerCreateView.as_view(),
         name="manufacturer-create",
     ),
     path(
-    "manufacturers/<int:pk>/update/",
+  "manufacturers/<int:pk>/update/",
         ManufacturerUpdateView.as_view(),
         name="manufacturer-update",
     ),
     path(
-    "manufacturers/<int:pk>/delete/",
+  "manufacturers/<int:pk>/delete/",
         ManufacturerDeleteView.as_view(),
         name="manufacturer-delete",
     ),
